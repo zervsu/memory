@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    transition: 2s;
+    align-items: center;
+}
+.img-logo{
+    width: 150px;
+    height: 150px;
+}
+.nav{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    text-decoration: none;
+    margin-top: 0px;
+    color: #d4af37;
+    list-style: none;
+}
+.nav li{
+    font-size: 25px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.nav li:hover{
+    transform: scale(1.06);
+    border:10px solid;
+    border-color: #420079;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.jogo{
+    width: 70vw;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.tabuleiro{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 100px; 
+}
+.card{
+    width: 140px;
+    height: 205px;
+}
+.inner-card{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card.virada .inner-card{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.carta{
+    width: 140px;
+    height: 200px;
+    transition: 0.5s;
+    box-shadow: 10 4px 15px  rgba(0, 0, 0, 0.795);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carta:hover{
+    transform: scale(1.15);
+}
+
+.footer{
+    width: 100vw;
+    height: 160px;
+    position: absolute;
+}
+.facil{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 100px;
+}
+.medio{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 80px;
+}
+.dificil{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    gap: 50px;
+    
+}
