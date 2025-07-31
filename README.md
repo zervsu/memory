@@ -1,2 +1,2 @@
 # memory
-jogo da memoria temático
+aplicaçãp contendo um jogo da memoria temático
