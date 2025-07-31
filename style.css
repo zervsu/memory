@@ -50,6 +50,7 @@ body{
     transform: scale(1.06);
     border:10px solid;
     border-color: #420079;
+    color: floralwhite;
 }
 .main{
     display: flex;
