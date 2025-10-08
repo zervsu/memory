@@ -21,6 +21,7 @@ body{
     justify-content: center;
     transition: 2s;
     align-items: center;
+    position: fixed;
 }
 .img-logo{
     width: 150px;
